@@ -20,11 +20,11 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    # গিটহাব নিজেই গ্রেডল সেটআপ করে নেবে
+    # গিটহাব নিজেই গ্রেডল সেটআপ করে নেবে (ভার্সন 8.9 এ আপডেট করা হলো)
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
       with:
-        gradle-version: 8.7
+        gradle-version: 8.9
 
     # সরাসরি gradle দিয়ে বিল্ড করা হচ্ছে
     - name: Build with Gradle
